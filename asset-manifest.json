@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Recipe-App/static/css/main.ae2aa32f.chunk.css",
+    "main.js": "/Recipe-App/static/js/main.aeb67faf.chunk.js",
+    "main.js.map": "/Recipe-App/static/js/main.aeb67faf.chunk.js.map",
+    "runtime-main.js": "/Recipe-App/static/js/runtime-main.333d7749.js",
+    "runtime-main.js.map": "/Recipe-App/static/js/runtime-main.333d7749.js.map",
+    "static/js/2.b66d1581.chunk.js": "/Recipe-App/static/js/2.b66d1581.chunk.js",
+    "static/js/2.b66d1581.chunk.js.map": "/Recipe-App/static/js/2.b66d1581.chunk.js.map",
+    "static/js/3.ff557f26.chunk.js": "/Recipe-App/static/js/3.ff557f26.chunk.js",
+    "static/js/3.ff557f26.chunk.js.map": "/Recipe-App/static/js/3.ff557f26.chunk.js.map",
+    "index.html": "/Recipe-App/index.html",
+    "static/css/main.ae2aa32f.chunk.css.map": "/Recipe-App/static/css/main.ae2aa32f.chunk.css.map",
+    "static/js/2.b66d1581.chunk.js.LICENSE.txt": "/Recipe-App/static/js/2.b66d1581.chunk.js.LICENSE.txt",
+    "static/media/recipe.css": "/Recipe-App/static/media/magnifier.6630d2ca.svg",
+    "static/media/index.css": "/Recipe-App/static/media/Raleway-Light.f25e9b3a.ttf",
+    "static/media/arrow.87ccb185.svg": "/Recipe-App/static/media/arrow.87ccb185.svg",
+    "static/media/main.css": "/Recipe-App/static/media/background.68734605.jpeg",
+    "static/media/cook.39928366.svg": "/Recipe-App/static/media/cook.39928366.svg",
+    "static/media/cutlery.41c157d5.svg": "/Recipe-App/static/media/cutlery.41c157d5.svg",
+    "static/media/smiley.5c289bcc.svg": "/Recipe-App/static/media/smiley.5c289bcc.svg",
+    "static/media/timer.45667a94.svg": "/Recipe-App/static/media/timer.45667a94.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.333d7749.js",
+    "static/js/2.b66d1581.chunk.js",
+    "static/css/main.ae2aa32f.chunk.css",
+    "static/js/main.aeb67faf.chunk.js"
+  ]
+}
