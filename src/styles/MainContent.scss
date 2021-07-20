@@ -1,0 +1,62 @@
+$bg-img: url('../images/background.jpeg');
+$text-color: #333;
+
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
+}
+
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: $bg-img;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+
+    .main{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .formWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn{
+            margin-left: 5px;           
+            padding: 0px 4px 2px;
+            border: 1px dashed black;
+            background-color: rgba(0, 0, 0, 0.1);           
+            color: black;
+            text-decoration: none;
+            transition-duration: .3s;
+        }
+
+        .btn:hover{
+            box-shadow: 0px 0px 6px .1px rgba(0,0,0,.5);
+        }
+        
+
+    }
+
+    .main__header{
+        font-family:'Dancing Script';
+        font-size: 5vw;
+    }
+
+    .main__description{
+        color: $text-color;
+    }
+
+    .main__description--change-width{
+        width: 40%;
+    }
+}
+

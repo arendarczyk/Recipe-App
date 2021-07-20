@@ -1,16 +1,20 @@
-import GetRecipes from './GetRecipes'
-import MetaDecorator from './MetaDecorator'
-import MainContent from './MainContent';
-import Header from './Header'
-
+import React from 'react'
+import MetaDecorator from './components/MetaDecorator'
+import MainContent from './components/MainContent'
+import GetRecipes from './components/GetRecipes'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function App() {
-  return(
+  return (
     <div>
       <MetaDecorator title='Magic Recipes' description='sample description'/>
-      <Header />
-      <MainContent />
-      <GetRecipes />         
+      <Router>
+        <Switch>
+          <Route path='/' exact component={MainContent} />
+          <Route path='/showRecipe' exact component={GetRecipes} />
+          <Route path='/showRecipe/:id' component={GetRecipes} />
+        </Switch>
+      </Router>      
     </div>
   );
 }
