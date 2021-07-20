@@ -1,30 +1,28 @@
 {
   "files": {
-    "main.css": "/Recipe-App/static/css/main.ae2aa32f.chunk.css",
-    "main.js": "/Recipe-App/static/js/main.aeb67faf.chunk.js",
-    "main.js.map": "/Recipe-App/static/js/main.aeb67faf.chunk.js.map",
-    "runtime-main.js": "/Recipe-App/static/js/runtime-main.333d7749.js",
-    "runtime-main.js.map": "/Recipe-App/static/js/runtime-main.333d7749.js.map",
-    "static/js/2.b66d1581.chunk.js": "/Recipe-App/static/js/2.b66d1581.chunk.js",
-    "static/js/2.b66d1581.chunk.js.map": "/Recipe-App/static/js/2.b66d1581.chunk.js.map",
-    "static/js/3.ff557f26.chunk.js": "/Recipe-App/static/js/3.ff557f26.chunk.js",
-    "static/js/3.ff557f26.chunk.js.map": "/Recipe-App/static/js/3.ff557f26.chunk.js.map",
+    "main.css": "/Recipe-App/static/css/main.0c38b327.chunk.css",
+    "main.js": "/Recipe-App/static/js/main.2bed786f.chunk.js",
+    "main.js.map": "/Recipe-App/static/js/main.2bed786f.chunk.js.map",
+    "runtime-main.js": "/Recipe-App/static/js/runtime-main.49b8b750.js",
+    "runtime-main.js.map": "/Recipe-App/static/js/runtime-main.49b8b750.js.map",
+    "static/js/2.4e782b09.chunk.js": "/Recipe-App/static/js/2.4e782b09.chunk.js",
+    "static/js/2.4e782b09.chunk.js.map": "/Recipe-App/static/js/2.4e782b09.chunk.js.map",
+    "static/js/3.1987519d.chunk.js": "/Recipe-App/static/js/3.1987519d.chunk.js",
+    "static/js/3.1987519d.chunk.js.map": "/Recipe-App/static/js/3.1987519d.chunk.js.map",
     "index.html": "/Recipe-App/index.html",
-    "static/css/main.ae2aa32f.chunk.css.map": "/Recipe-App/static/css/main.ae2aa32f.chunk.css.map",
-    "static/js/2.b66d1581.chunk.js.LICENSE.txt": "/Recipe-App/static/js/2.b66d1581.chunk.js.LICENSE.txt",
-    "static/media/recipe.css": "/Recipe-App/static/media/magnifier.6630d2ca.svg",
-    "static/media/index.css": "/Recipe-App/static/media/Raleway-Light.f25e9b3a.ttf",
+    "static/css/main.0c38b327.chunk.css.map": "/Recipe-App/static/css/main.0c38b327.chunk.css.map",
+    "static/js/2.4e782b09.chunk.js.LICENSE.txt": "/Recipe-App/static/js/2.4e782b09.chunk.js.LICENSE.txt",
+    "static/media/MainContent.scss": "/Recipe-App/static/media/background.68734605.jpeg",
     "static/media/arrow.87ccb185.svg": "/Recipe-App/static/media/arrow.87ccb185.svg",
-    "static/media/main.css": "/Recipe-App/static/media/background.68734605.jpeg",
     "static/media/cook.39928366.svg": "/Recipe-App/static/media/cook.39928366.svg",
     "static/media/cutlery.41c157d5.svg": "/Recipe-App/static/media/cutlery.41c157d5.svg",
     "static/media/smiley.5c289bcc.svg": "/Recipe-App/static/media/smiley.5c289bcc.svg",
     "static/media/timer.45667a94.svg": "/Recipe-App/static/media/timer.45667a94.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.333d7749.js",
-    "static/js/2.b66d1581.chunk.js",
-    "static/css/main.ae2aa32f.chunk.css",
-    "static/js/main.aeb67faf.chunk.js"
+    "static/js/runtime-main.49b8b750.js",
+    "static/js/2.4e782b09.chunk.js",
+    "static/css/main.0c38b327.chunk.css",
+    "static/js/main.2bed786f.chunk.js"
   ]
 }
