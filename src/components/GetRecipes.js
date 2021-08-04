@@ -124,8 +124,7 @@ const GetRecipes = ({ match })=> {
                         ))}
                     </div>
                 </div>
-            </div>    
-            <button className='upBtn'>Do gory</button>     
+            </div>       
         </div>
     )
 }

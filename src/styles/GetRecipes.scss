@@ -6,6 +6,8 @@
         width: 100vw;
         height: 9vh;
         display: flex;
+        z-index: 999;
+        position: fixed;
         justify-content: center;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.4);
@@ -88,6 +90,9 @@
 }
 
 @media (max-width: 700px) {
+    .hideHelper{
+        padding-top: 70px;
+    }
     .upBtn{
         width: 300px !important;
         position: absolute !important;
@@ -122,7 +127,5 @@
             overflow: visible !important;
         }
     }
-    
-    
   }
 

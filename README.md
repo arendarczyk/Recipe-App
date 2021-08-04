@@ -1,3 +1,15 @@
+# Simple recipe application
+
+I focused on the logical part, not the appearance, the application was written in react.
+I used:
+* Hooks (useState, useMemo, useEffect)
+* React router
+* React helmet
+* Api (max 10 req per minute)
+* Sass
+
+[Live demo](https://arendarczyk.github.io/Recipe-App/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
