@@ -10,9 +10,9 @@ function App() {
       <MetaDecorator title='Magic Recipes' description='sample description'/>
       <Router>
         <Switch>
-          <Route path='/' exact component={MainContent} />
-          <Route path='/showRecipe' exact component={GetRecipes} />
-          <Route path='/showRecipe/:id' component={GetRecipes} />
+          <Route path='/Recipe-App' exact component={MainContent} />
+          <Route path='/Recipe-App/showRecipe' exact component={GetRecipes} />
+          <Route path='/Recipe-App/showRecipe/:id' component={GetRecipes} />
         </Switch>
       </Router>      
     </div>
