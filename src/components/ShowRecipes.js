@@ -20,13 +20,15 @@ const ShowRecipes = ({title, mealType, dietLabel, image, time, ingredients, calo
             <div className='infoAboutRecipe'>
                 <div className='title'>{title}</div>
                 <div className='mealType'><CutlerySvg /> {typeof mealType == 'undefined' ? <span className='type'> - </span> : <span className='type'> {mealType} </span>}</div>
-                <div className='xd1'>
+                <div className='infoWrapper'>
                     <p className='recipeDescription'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, mollitia.</p>
-                    <div className='tdWrapper'>
-                        <div className='recipeInfo'><SmileySvg /> {dietLabel.length==0 ? <span className='type'> - </span> : <span className='type'> {dietLabel} </span>}</div>
-                        <div className='recipeInfo'><TimerSvg /> {time==0 ? <span className='type'> - </span> : <span className='type'> {time} min </span>}</div>
+                    <div className='infoWrapperHelper'>
+                        <div className='tdWrapper'>
+                            <div className='recipeInfo'><SmileySvg /> {dietLabel.length==0 ? <span className='type'> - </span> : <span className='type'> {dietLabel} </span>}</div>
+                            <div className='recipeInfo'><TimerSvg /> {time==0 ? <span className='type'> - </span> : <span className='type'> {time} min </span>}</div>
+                        </div>
+                        <button className='showIngredientsBtn' onClick={()=>{ window.alert(`Ingredients: ${ingredients.map(e=> "\n" + e.text )}`)}}>Show Ingredients</button>
                     </div>
-                    <button className='showIngredientsBtn' onClick={toggleIngredients}>Show Ingredients</button>
                 </div>
             </div>                              
                     <div style={displayNone} className='ingredientsWrapper'>

@@ -2,6 +2,8 @@ import React,{useState, useMemo, useEffect} from 'react'
 import ShowRecipes from './ShowRecipes'
 import '../styles/GetRecipes.scss'
 import {ReactComponent as ArrowSvg} from '../icons/arrow.svg'
+import {ReactComponent as Burger} from "../icons/magnifier.svg"
+import {ReactComponent as GitHub} from '../icons/github.svg'
 
 const GetRecipes = ({ match })=> {
 
@@ -67,7 +69,7 @@ const GetRecipes = ({ match })=> {
         //x[counter].classList.contains('animation')?x[counter].classList.remove('animation') : x[counter].classList.add('animation')
         
         x.forEach(e=>{
-            e.style.transform += "translateY(-350px)"
+            e.style.transform += "translateY(-40vh)"
             // e.classList.add('animation')
         })
        
@@ -80,7 +82,7 @@ const GetRecipes = ({ match })=> {
         setCounter(counter-1)
         const x = document.querySelectorAll('.recipeWrapper')
         x.forEach(e=>{
-            e.style.transform += "translateY(+350px)"
+            e.style.transform += "translateY(+40vh)"
         })     
     }
 
@@ -101,9 +103,10 @@ const GetRecipes = ({ match })=> {
                     e.preventDefault()
                     getSearch(e)
                     }}>              
-                    <input type='text' className='formWrapper__input' placeholder='Search...' value={input} onChange={getInput}/>
-                    <button className='btn' type='submit'>Search</button>
-                </form>               
+                    <input type='text' className='formWrapper__input' placeholder='Search...' value={input} onChange={getInput} required />
+                    <button className='btn' type='submit'><Burger /></button>
+                </form>
+                <a href='https://github.com/arendarczyk' target='blank' className='gitHubBtn'><GitHub /></a>             
             </div>  
             <div className='hideHelper'>
                 <div className='secondSectionWrapper'>   

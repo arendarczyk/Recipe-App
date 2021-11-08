@@ -1,6 +1,6 @@
 
 .showRecipeWrapper{
-    background-color: #2a2c39;
+    background-color: #2f2542;
     height: 100vh;
     .searchWrapper{
         width: 100vw;
@@ -13,21 +13,62 @@
         background-color: rgba(0, 0, 0, 0.4);
 
         .formWrapper{
-                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
             .formWrapper__input{
                 transition-duration: .3s;
                 padding: 3px 10px;
                 border: 3px solid transparent;
                 border-style: none solid;
                 border-radius: 10px;;
+                background-color: rgb(230, 230, 230);
             }
             .formWrapper__input:focus{      
                 outline: none;
-                border: 3px solid rgb(255, 255, 255);
+                background-color: transparent;
+                color: #999;
+                border: 3px solid rgb(0, 204, 240);
                 border-style: none solid;
                 border-radius: 10px;;
-            }  
+            } 
+            .btn{
+                background-color: transparent; 
+                border: 1px dashed #999;
+                border-radius: 10px;
+                margin-left: 10px;
+                cursor: pointer;
+                transition-duration: .4s;
+            }
+            .btn svg{
+                transform: scale(1);
+                fill: rgb(230, 230, 230);
+            }
+            .btn:hover{
+                border: 1px solid white;    
+                background-color: white;         
+            }
+            .btn:active{
+                background-color: transparent;  
+            }
+            .btn:hover svg{
+                fill: #2a2c39;
+            }
+      
         }              
+    }
+    .gitHubBtn{
+        position: absolute;
+  
+        right: 10px;
+        padding: 1vh;
+        background-color: transparent;
+        fill: white;
+        transition-duration: .3s;
+    }
+    .gitHubBtn:hover{
+        fill: #999;
     }
     .hideHelper{
         height: 100vh;
@@ -36,8 +77,8 @@
         align-items: center;
         .secondSectionWrapper{
             background-color: rgb(211, 211, 211);
-            width: 700px;
-            height: 350px;
+            width: 40vw;
+            height: 40vh;
             position: relative;
             .recipeCounter{
                 position: absolute;
@@ -82,50 +123,39 @@
             }
             .recipesWrapper{
                 width: 700px;
-                height: 350px;
+                height: 40vh;
                 overflow: hidden;
             }
         }
     }
 }
 
-@media (max-width: 700px) {
-    .hideHelper{
-        padding-top: 70px;
-    }
-    .upBtn{
-        width: 300px !important;
-        position: absolute !important;
-        bottom: 0 !important;
-        left: 0 !important;
-    }
+@media (max-width: 1000px) {
     .showRecipeWrapper{
-
-        height: 4000px !important;
+        height: 6100px;
     }
-    .secondSectionWrapper{   
-        top: -150px;
-        background-color: #2a2c39 !important    ;    
-        width: 70px;
-        height: 30px ;
+
+    .secondSectionWrapper{
+        width: 95vw !important;
         
-        position: relative;
-
         .recipeCounter{
-            display: none;
-         }
-         .changeButtonWrapper{
-             display: none;
-         }
-        .sortBtn{    
-           display: none;       
+            display: none !important;
         }
-        .switchBtns{
-            display: none;
+
+        .recipesWrapper{           
+            width: 100% !important;
+            height: 100% !important;    
+            overflow:visible !important;
         }
-        .recipesWrapper{
-            overflow: visible !important;
+
+        .sortBtn{       
+            left: 50% !important;
+            transform: translate(-50%, -5vh) !important;
         }
     }
+
+    .switchBtns{
+        display: none;
+    }    
   }
 

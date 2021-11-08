@@ -1,22 +1,26 @@
 .recipeWrapper{
+    width: 40vw;
+    height: 40vh;
     display: flex;
-    position: relative;   
+    position: relative;
+    transition-duration: .3s;   
     .image{
-        height: 350px;
-        width: 300px;       
+        height: 40vh;
+        width: 17vw;       
     }
     .infoAboutRecipe{
         position: absolute;
         top: 0;
         right: 0;
-        width: 400px;
-        height: 350px;
+        width: 23vw;
+        height: 40vh;
+        font-size: 2vh;
 
         .title{
             text-align: center;
-            font-size: 35px;
+            font-size: 4vh;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 1vh;
         }
         .mealType{
             text-align: center;
@@ -43,19 +47,41 @@
         }
         .recipeDescription{
             width: 80%;
-            margin: 20px auto 0px;
+            margin: 2vh auto 0px;
             text-align: center;   
-        }
-        .tdWrapper{
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .xd1{
+        }     
+        
+        .infoWrapper{
             display: flex;
             flex-direction: column;
-            height: 50%;
-            justify-content: space-between;
+            justify-content: center;
+            font-size: 2vh;
+
+            .infoWrapperHelper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 5px;
+                left: 0; 
+                right: 0; 
+                margin-left: auto; 
+                margin-right: auto; 
+                
+                align-items: center;
+                flex-direction: column;
+    
+                .tdWrapper{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+
+                    .recipeInfo:first-child{
+                        padding-right: 1vw;
+                    }
+                  
+                }
+            }
 
             .showIngredientsBtn{
                 width: 130px;
@@ -86,9 +112,31 @@
        }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .recipeWrapper{
-        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100% !important;
+        height: 500px ;
+        margin-bottom: 10vh;
         background-color: rgb(211, 211, 211);
+        color: white !important;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        .image{
+            width: 95vw !important;
+            height: 300px !important;
+        }
+        .infoAboutRecipe{
+            position: static !important;
+            width: 100% ;
+
+            .recipeDescription{
+                display: none;
+            }
+        }
+       
     }
+    
 }

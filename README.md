@@ -2,10 +2,11 @@
 
 I focused on the logical part, not the appearance, the application was written in react.
 I used:
+* GSAP for animation
 * Hooks (useState, useMemo, useEffect)
 * React router
 * React helmet
-* Api (max 10 req per minute)
+* Api (max 10 req per minute, low quality photos and missing things)
 * Sass
 
 [Live demo](https://arendarczyk.github.io/Recipe-App/).
