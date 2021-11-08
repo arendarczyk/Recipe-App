@@ -38,20 +38,20 @@ const PreviewContent = () => {
         const tl = gsap.timeline({ defaults: { ease: "power3.inOut" } });
 
         tl.to(floor, { duration: 1, autoAlpha: 1 })
-            // .fromTo(
-            //     bg1,
-            //     { x: "-=300" },
-            //     { duration: 0.5, x: "+=300", autoAlpha: 1 }
-            // )
-            // .fromTo(
-            //     [bg2, bg3, bg4, bg5, bg6, bg7],
-            //     { y: "-=300" },
-            //     { y: "+=300", autoAlpha: 1, stagger: 0.25 }
-            // )
-            // .fromTo(human, { x: "+=200" }, { x: "-=200", autoAlpha: 1 })
-            // .to(plant, { autoAlpha: 1 })
-            // .to([bg1, bg2, bg3, bg4, bg5, bg6, bg7], {transfrom: 'scale(0.1)'})
-            // .to(burger, {autoAlpha: 0})
+            .fromTo(
+                bg1,
+                { x: "-=300" },
+                { duration: 0.5, x: "+=300", autoAlpha: 1 }
+            )
+            .fromTo(
+                [bg2, bg3, bg4, bg5, bg6, bg7],
+                { y: "-=300" },
+                { y: "+=300", autoAlpha: 1, stagger: 0.25 }
+            )
+            .fromTo(human, { x: "+=200" }, { x: "-=200", autoAlpha: 1 })
+            .to(plant, { autoAlpha: 1 })
+            .to([bg1, bg2, bg3, bg4, bg5, bg6, bg7], {transfrom: 'scale(0.1)'})
+            .to(burger, {autoAlpha: 0})
             .fromTo(elementSearch,{y:'-=100', autoAlpha:0} , {y:'+=100' ,autoAlpha:1})
             .fromTo(textElements, {y:'-=100', autoAlpha:0} , {y:'+=100' ,autoAlpha:1})
         //.to(mainWrapper, {filter: 'blur(5px)'});
@@ -87,9 +87,10 @@ const PreviewContent = () => {
                     <input
                         className="formWrapper__input"                                          
                         placeholder="e.g. egg :)"
-                        onChange={(e) => {                     
-                            setQuery(e.target.value);                       
-                        }}
+                        onChange={(e)=>{
+                            e.preventDefault();
+                            setQuery(e.target.value);       
+                        }}    
                         type="text"
                         value={query}
                     />

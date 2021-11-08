@@ -65,12 +65,9 @@ const GetRecipes = ({ match })=> {
         }
         setCounter(counter+1)
         const x = document.querySelectorAll('.recipeWrapper')
-        //x[counter].classList.add('animation')       
-        //x[counter].classList.contains('animation')?x[counter].classList.remove('animation') : x[counter].classList.add('animation')
-        
+           
         x.forEach(e=>{
             e.style.transform += "translateY(-40vh)"
-            // e.classList.add('animation')
         })
        
       
