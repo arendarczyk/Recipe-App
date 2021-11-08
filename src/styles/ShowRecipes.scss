@@ -6,13 +6,13 @@
     transition-duration: .3s;   
     .image{
         height: 40vh;
-        width: 17vw;       
+        width: 45%;       
     }
     .infoAboutRecipe{
         position: absolute;
         top: 0;
         right: 0;
-        width: 23vw;
+        width: 55%;
         height: 40vh;
         font-size: 2vh;
 
@@ -130,7 +130,7 @@
         }
         .infoAboutRecipe{
             position: static !important;
-            width: 100% ;
+            width: 100%;
 
             .recipeDescription{
                 display: none;

@@ -87,10 +87,10 @@ const GetRecipes = ({ match })=> {
     }
 
     const setFirstRecipe = ()=>{
-        const z = (counter * 350)
+        const z = (counter * 40)
         const x = document.querySelectorAll('.recipeWrapper')
         x.forEach(e=>{
-            e.style.transform += `translateY(${z}px)`
+            e.style.transform += `translateY(${z}vh)`
         })    
         setCounter(0); 
     }
